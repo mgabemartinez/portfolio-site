@@ -1,0 +1,174 @@
+/***FONTS** */
+body {
+  height: 100%; }
+
+h1 {
+  color: pink;
+  font-size: 6em;
+  letter-spacing: 4px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  text-shadow: 3px 3px #52BECC;
+  margin-bottom: 30px; }
+
+h2 {
+  color: #52BECC;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  text-shadow: 1px 1px white;
+  max-width: 550px; }
+
+p {
+  color: pink;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  max-width: 550px; }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:visited {
+    color: white; }
+  a:visited:hover {
+    color: #2F4C69; }
+  a:active {
+    color: #52BECC; }
+
+button {
+  height: 10%;
+  width: 26%;
+  border: solid 3px white;
+  background: transparent;
+  text-align: center;
+  margin-top: 30%;
+  maring-bottom: 0; }
+  button p {
+    color: #2F4C69;
+    font-size: 2em;
+    text-transform: uppercase; }
+
+button:hover {
+  background: #2F4C69;
+  border: solid 3px #2F4C69; }
+  button:hover p {
+    color: pink; }
+
+header {
+  height: 100vh;
+  background-image: url("file://localhost/Users/GabeMartinez/Desktop/trees.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: pink;
+  justify-content: center;
+  text-align: center; }
+  header .progress {
+    width: 100%;
+    height: 7px;
+    background-color: pink;
+    position: fixed;
+    top: 0; }
+  header .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  width: 100%; }
+  nav #logo {
+    margin-top: 0;
+    color: pink;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    text-shadow: 3px 3px #52BECC;
+    position: fixed;
+    float: left;
+    padding-top: 1%;
+    padding-left: 1.5%; }
+  nav li {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 4px;
+    display: inline-block; }
+    nav li:hover {
+      background: pink;
+      color: #2F4C69; }
+    nav li a {
+      text-decoration: none;
+      margin: 0px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+      padding-right: 60px;
+      padding-bottom: 25px; }
+
+.textbox {
+  height: 75%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 3px white; }
+
+#blurb,
+#music {
+  height: 100vh;
+  background: #D8E8EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: solid 6px pink; }
+  #blurb h2,
+  #music h2 {
+    color: #2F4C69;
+    padding: 0 10% 3% 10%; }
+
+#web,
+#connect {
+  height: 100vh;
+  background: #C1D4D6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: solid 6px pink; }
+  #web h2,
+  #connect h2 {
+    color: #2F4C69;
+    padding: 0 10% 3% 10%; }
+
+footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #2F4C69;
+  border-top: solid 6px pink;
+  border-bottom: solid 6px pink; }
+
+/*# sourceMappingURL=base.css.map */
