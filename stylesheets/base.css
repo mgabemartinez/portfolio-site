@@ -56,7 +56,42 @@ button:hover {
   button:hover p {
     color: pink; }
 
-header {
+.progress {
+  width: 100%;
+  height: 7px;
+  background-color: pink;
+  position: fixed;
+  top: 6; }
+
+progress {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* Dimensions */
+  width: 100%;
+  height: 8px;
+  /* Reset the appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+  /* Progress bar value for IE10+ */
+  color: #52BECC; }
+
+progress::-webkit-progress-bar {
+  background-color: pink; }
+
+progress::-webkit-progress-value {
+  background-color: #52BECC; }
+
+progress::-moz-progress-bar {
+  background-color: #52BECC; }
+
+#home {
   height: 100vh;
   background-image: url("file://localhost/Users/GabeMartinez/Desktop/trees.jpg");
   background-position: center center;
@@ -64,14 +99,9 @@ header {
   background-size: cover;
   background-color: pink;
   justify-content: center;
-  text-align: center; }
-  header .progress {
-    width: 100%;
-    height: 7px;
-    background-color: pink;
-    position: fixed;
-    top: 0; }
-  header .hero {
+  text-align: center;
+  margin-top: px; }
+  #home .hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -86,7 +116,9 @@ nav {
   align-items: center;
   text-align: center;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  margin-top: 8px;
+  z-index: 999; }
   nav #logo {
     margin-top: 0;
     color: pink;
@@ -130,9 +162,8 @@ nav {
   text-align: center;
   border: solid 3px white; }
 
-#blurb,
-#music {
-  height: 100vh;
+#about {
+  min-height: 100vh;
   background: #D8E8EB;
   display: flex;
   flex-direction: column;
@@ -140,10 +171,28 @@ nav {
   align-items: center;
   text-align: center;
   border-top: solid 6px pink; }
-  #blurb h2,
-  #music h2 {
+  #about h2 {
     color: #2F4C69;
     padding: 0 10% 3% 10%; }
+
+#music {
+  min-height: 100vh;
+  background: #D8E8EB;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: solid 6px pink; }
+  #music .music-player {
+    position: absolute;
+    bottom: 0;
+    background-color: #52BECC;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    text-align: center; }
 
 #web,
 #connect {

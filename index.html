@@ -4,24 +4,29 @@
      <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
      <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Ek+Mukta:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/base.css">
     <meta charset="utf-8">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+
   </head>
 
   <body>
-    <header id='home'>
-      <div class='progress'>
-      </div>
-       
-      <nav>
+    <progress value='0'></progress>
+
+    <div id='home'>
+      
+      <nav id='nav'>
         <a id='logo' href='#home'>G/M</a>
         <ul>
-          <li><a href=#blurb>About</a></li>
-          <li><a href=#web>Web</a></li>
-          <li><a href=#music>Music</a></li>
-          <li><a href=#connect>Connect</a></li>
+          <li><a href='#about' id='nav-about'>About</a></li>
+          <li><a href='#web' id='nav-web'>Web</a></li>
+          <li><a href='#music' id='nav-music'>Music</a></li>
+          <li><a href='#connect' id='nav-connect'>Connect</a></li>
         </ul>
       </nav>
 
@@ -29,9 +34,9 @@
           <h1>Gabe Martinez</h1>
           <h2>Developer / Dreamer</h2>
       </div>
-    </header>
+    </div>
 
-    <div id='blurb'>
+    <div id='about'>
       <div class='textbox'>
         <h2>I live to create, AND create to live.</h2>
         <br>
@@ -49,13 +54,25 @@
     </div>
 
     <div id='music'>
-      <h2>I also write music. 
-      <br>  
-      <h2>Here's what I've been up to:</h2>
+    
+        <h2>I also write music.</h2>
+        <br>  
+        <h2>Here's what I've been up to:</h2>
+
+        <div class='music-player'>
+          <div class='player-left'>
+          </div>
+          <div class='player-center'>
+            <h2>Music Player here</h2>
+          </div>
+          <div class='player-right'>
+          </div>
+        </div>
+      
     </div>
 
     <div id='connect'>
-      <h2>There's so much I want to hear about you</h2>
+      <h2>There's so much I want to hear about you.</h2>
       <br>
       <h2>Get in touch:</h2>
     </div>

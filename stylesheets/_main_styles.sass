@@ -63,7 +63,47 @@ button:hover
   p
     color: pink
 
-header
+.progress
+  width: 100%
+  height: 7px
+  background-color: pink
+  position: fixed
+  top: 6
+
+progress
+  z-index: 999
+  position: fixed
+  left: 0
+  top: 0
+
+  /* Dimensions */
+  width: 100%
+  height: 8px
+
+  /* Reset the appearance */
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent
+
+  /* Progress bar value for IE10+ */
+  color: #52BECC
+
+progress::-webkit-progress-bar
+  background-color: pink
+
+progress::-webkit-progress-value
+  background-color: #52BECC
+
+progress::-moz-progress-bar
+  background-color: #52BECC
+
+#home
   height: 100vh
   background-image: url('file://localhost/Users/GabeMartinez/Desktop/trees.jpg')
   background-position: center center
@@ -72,13 +112,8 @@ header
   background-color: pink
   justify-content: center
   text-align: center
+  margin-top: px
 
-  .progress
-    width: 100%
-    height: 7px
-    background-color: pink
-    position: fixed
-    top: 0
 
   .hero
     height: 100vh
@@ -96,6 +131,9 @@ nav
   text-align: center
   position: fixed
   width: 100%
+  margin-top: 8px
+  z-index: 999
+
 
   #logo
     margin-top: 0
@@ -143,9 +181,8 @@ nav
   text-align: center
   border: solid 3px white
 
-#blurb,
-#music
-  height: 100vh
+#about,
+  min-height: 100vh
   background: $secondary-background
   display: flex
   flex-direction: column
@@ -157,6 +194,28 @@ nav
   h2
     color: $deep-blue
     padding: 0 10% 3% 10%
+
+#music,
+  min-height: 100vh
+  background: $secondary-background
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  border-top: solid 6px pink
+  
+
+  .music-player
+    position: absolute
+    bottom: 0
+    background-color: $tropical-blue      
+    height: 200px
+    width: 100%
+    justify-content: center
+    text-align: center
+
 
 #web,  
 #connect
@@ -184,3 +243,6 @@ footer
   background: $deep-blue
   border-top: solid 6px pink
   border-bottom: solid 6px pink
+
+          
+    
