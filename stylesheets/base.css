@@ -93,7 +93,7 @@ progress::-moz-progress-bar {
 
 #home {
   height: 100vh;
-  background-image: url("file://localhost/Users/GabeMartinez/Desktop/trees.jpg");
+  background-image: url(../img/trees.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -164,7 +164,7 @@ nav {
 
 #about {
   min-height: 100vh;
-  background: #D8E8EB;
+  background: #FCFCFC;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +177,7 @@ nav {
 
 #music {
   min-height: 100vh;
-  background: #D8E8EB;
+  background: #FCFCFC;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -197,7 +197,7 @@ nav {
 #web,
 #connect {
   height: 100vh;
-  background: #C1D4D6;
+  background: #FAFAFA;
   display: flex;
   flex-direction: column;
   justify-content: center;
