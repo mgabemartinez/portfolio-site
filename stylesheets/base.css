@@ -1,26 +1,26 @@
+/*** GOLD REDESIGN ** */
 /***FONTS** */
 body {
   height: 100%; }
 
 h1 {
-  color: pink;
-  font-size: 6em;
+  color: #B59551;
+  font-size: 7em;
   letter-spacing: 4px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 600;
-  text-shadow: 3px 3px #52BECC;
+  font-weight: 700;
+  text-shadow: 5px 5px #5E5E5E;
   margin-bottom: 30px; }
 
 h2 {
-  color: #52BECC;
+  color: #292929;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2em;
-  font-weight: 400;
-  text-shadow: 1px 1px white;
+  font-weight: 600;
   max-width: 550px; }
 
 p {
-  color: pink;
+  color: #292929;
   font-size: 1.2em;
   letter-spacing: 2px;
   font-family: "Josefin Sans", sans-serif;
@@ -33,33 +33,14 @@ a {
   a:visited {
     color: white; }
   a:visited:hover {
-    color: #2F4C69; }
+    color: white; }
   a:active {
-    color: #52BECC; }
-
-button {
-  height: 10%;
-  width: 26%;
-  border: solid 3px white;
-  background: transparent;
-  text-align: center;
-  margin-top: 30%;
-  maring-bottom: 0; }
-  button p {
-    color: #2F4C69;
-    font-size: 2em;
-    text-transform: uppercase; }
-
-button:hover {
-  background: #2F4C69;
-  border: solid 3px #2F4C69; }
-  button:hover p {
-    color: pink; }
+    color: white; }
 
 .progress {
   width: 100%;
   height: 7px;
-  background-color: pink;
+  background-color: black;
   position: fixed;
   top: 6; }
 
@@ -83,21 +64,21 @@ progress {
   color: #52BECC; }
 
 progress::-webkit-progress-bar {
-  background-color: pink; }
+  background-color: #FCFCFC; }
 
 progress::-webkit-progress-value {
-  background-color: #52BECC; }
+  background-color: #EBE2CE; }
 
 progress::-moz-progress-bar {
-  background-color: #52BECC; }
+  background-color: #EBE2CE; }
 
 #home {
   height: 100vh;
-  background-image: url(../img/trees.jpg);
+  background-image: url(../img/trees2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: pink;
+  background-color: #FCFCFC;
   justify-content: center;
   text-align: center;
   margin-top: px; }
@@ -121,12 +102,12 @@ nav {
   z-index: 999; }
   nav #logo {
     margin-top: 0;
-    color: pink;
+    color: #B59551;
     font-size: 2.5em;
     letter-spacing: 4px;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: 600;
-    text-shadow: 3px 3px #52BECC;
+    font-weight: 700;
+    text-shadow: 4px 4px #5E5E5E;
     position: fixed;
     float: left;
     padding-top: 1%;
@@ -134,14 +115,13 @@ nav {
   nav li {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     color: white;
     letter-spacing: 4px;
     display: inline-block; }
     nav li:hover {
-      background: pink;
-      color: #2F4C69; }
+      background: #B59551; }
     nav li a {
       text-decoration: none;
       margin: 0px;
@@ -160,7 +140,8 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: solid 3px white; }
+  padding: 50px;
+  border: solid 3px #EBE2CE; }
 
 #about {
   min-height: 100vh;
@@ -170,9 +151,9 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: solid 6px pink; }
+  border-top: solid 6px #EBE2CE; }
   #about h2 {
-    color: #2F4C69;
+    color: #292929;
     padding: 0 10% 3% 10%; }
 
 #music {
@@ -184,7 +165,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: solid 6px pink; }
+  border-top: solid 6px #EBE2CE; }
   #music .music-player {
     position: absolute;
     bottom: 0;
@@ -194,7 +175,42 @@ nav {
     justify-content: center;
     text-align: center; }
 
-#web,
+#web {
+  height: 4100px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top: solid 6px #EBE2CE; }
+  #web .section-title {
+    padding: 30px;
+    margin-top: 80px;
+    margin-bottom: 40px; }
+
+.work-display {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .work-display .work-image {
+    max-width: 100%;
+    margin-bottom: 40px; }
+  .work-display .line {
+    height: 5px;
+    width: 100%;
+    background-color: #B59551;
+    margin-top: 40px;
+    margin-bottom: 70px; }
+  .work-display p {
+    font-size: 2em;
+    color: #292929; }
+  .work-display .italic {
+    font-size: 1em;
+    text-decoration: italic;
+    margin: 0 auto; }
+
 #connect {
   height: 100vh;
   background: #FAFAFA;
@@ -203,10 +219,9 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: solid 6px pink; }
-  #web h2,
+  border-top: solid 6px #EBE2CE; }
   #connect h2 {
-    color: #2F4C69;
+    color: #292929;
     padding: 0 10% 3% 10%; }
 
 footer {
@@ -216,8 +231,45 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #2F4C69;
-  border-top: solid 6px pink;
-  border-bottom: solid 6px pink; }
+  background: #292929;
+  border-top: solid 6px #FCFCFC;
+  border-bottom: solid 6px #B59551; }
+  footer p {
+    color: #FCFCFC;
+    font-size: 0.8em; }
+
+.button-large {
+  text-decoration: none;
+  float: left;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #292929;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: solid 3px #292929;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .button-large:hover {
+    text-decoration: none;
+    color: #FCFCFC;
+    background-color: #292929;
+    cursor: pointer; }
+  .button-large:visited {
+    text-decoration: none;
+    color: #FCFCFC; }
+  .button-large:active {
+    text-decoration: none;
+    text-decoration-style: none; }
+  .button-large:hover {
+    background: #B59551;
+    border: solid 3px #B59551; }
 
 /*# sourceMappingURL=base.css.map */
