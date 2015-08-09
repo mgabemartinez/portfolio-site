@@ -7,8 +7,8 @@ $(document).ready(function() {
     element: $('#about'),
     handler: function(direction) {
       if (direction === "down") {
-        $('#nav-about').css("color", "#52BECC");
-        $('#nav').css("background-color", "#2F4C69");
+        $('#nav-about').css("color", "#292929");
+        $('#nav').css("background-color", "#DEDEDE");
       }
       else {
         $('#nav-about').css("color", "white");
@@ -22,43 +22,27 @@ $(document).ready(function() {
     element: $('#web'),
     handler: function(direction) {
       if (direction === "down") {
-        $('#nav-web').css("color", "#52BECC");
+        $('#nav-web').css("color", "#292929");
         $('#nav-about').css("color", "white");     
       }
       else {
-        $('#nav-about').css("color", "#52BECC");
+        $('#nav-about').css("color", "#292929");
         $('#nav-web').css("color", "white");
       }
     }
   });
 
-var waypoint = new Waypoint({
-    element: $('#music'),
-    handler: function(direction) {
-      if (direction === "down") {
-        $('#nav-music').css("color", "#52BECC");
-        $('#nav-connect').css("color", "white");
-        $('#nav-web').css("color", "white");
-
-      }
-      else {
-        $('#nav-music').css("color", "white");
-        $('#nav-web').css("color", "#52BECC");
-
-      }
-    }
-  });
 
 var waypoint = new Waypoint({
     element: $('#connect'),
     handler: function(direction) {
       if (direction === "down") {
-        $('#nav-connect').css("color", "#52BECC");
+        $('#nav-connect').css("color", "#292929");
         $('#nav-music').css("color", "white");
       }
       else {
         $('#nav-connect').css("color", "white");
-        $('#nav-music').css("color", "#52BECC");
+        $('#nav-music').css("color", "#292929");
       }
     }
   });
