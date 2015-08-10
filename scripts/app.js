@@ -38,11 +38,11 @@ var waypoint = new Waypoint({
     handler: function(direction) {
       if (direction === "down") {
         $('#nav-connect').css("color", "#292929");
-        $('#nav-music').css("color", "white");
+        $('#nav-web').css("color", "white");
       }
       else {
         $('#nav-connect').css("color", "white");
-        $('#nav-music').css("color", "#292929");
+        $('#nav-web').css("color", "#292929");
       }
     }
   });

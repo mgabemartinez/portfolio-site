@@ -28,6 +28,15 @@ p {
   max-width: 550px;
   line-height: 1.7em; }
 
+li {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 4px;
+  display: inline-block; }
+
 a {
   text-decoration: none;
   color: #B59551;
@@ -36,11 +45,14 @@ a {
   font-weight: 600; }
   a:visited {
     text-decoration: none;
+    underline: none;
     color: white; }
   a:visited:hover {
     text-decoration: none;
+    underline: none;
     color: white; }
   a:active {
+    underline: none;
     text-decoration: none;
     color: white; }
 
