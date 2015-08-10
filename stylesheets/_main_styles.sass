@@ -17,30 +17,58 @@ h2
   font-family: $main-font, sans-serif
   font-size: 2em
   font-weight: 600
-
   max-width: 550px
+  line-height: 1.3em
 
 p
   color: $off-black
   font-size: 1.2em
-  letter-spacing: 2px
   font-family: $main-font, sans-serif
   font-weight: 600
   max-width: 550px
+  line-height: 1.7em
 
 a
   text-decoration: none
-  color: white
+  color: $gold
+  font-size: 1.2em
+  font-family: $main-font, sans-serif
+  font-weight: 600
 
   &:visited
+    text-decoration: none
     color: white
 
   &:visited:hover
+    text-decoration: none
     color: white
 
   &:active
+    text-decoration: none
     color: white
 
+.football-links
+  color: $gold
+  font-family: $main-font, sans-serif
+  font-size: 1em
+  text-decoration: none
+  margin-left: 4px
+
+  &:hover
+    text-decoration: none
+    border-bottom: 3px solid $gold
+
+  &:visited
+    text-decoration: none
+    color: $gold
+
+  &:visited:hover
+    text-decoration: none
+    color: $gold
+
+  &:active
+    text-decoration: none
+    color: $gold
 
 .progress
   width: 100%
@@ -141,6 +169,8 @@ nav
       
     a
       text-decoration: none
+      font-weight: 500
+      font-size: 1em
       margin: 0px
       display: block
       width: 100%
@@ -150,7 +180,7 @@ nav
       padding-bottom: 25px
 
 .textbox
-  height: 40%
+
   width: 500px
   max-width: 550px
   display: flex
@@ -160,11 +190,11 @@ nav
   text-align: center
   padding: 50px
   border: solid 3px $light-gold
-  margin-top: 40px
+  margin: 50px
 
 
 #about,
-  min-height: 150vh
+  min-height: 1740px
   background: $secondary-background
   display: flex
   flex-direction: column
@@ -204,7 +234,7 @@ nav
 
 
 #web
-  height: 4100px
+  height: 3200px
   background: white
   display: flex
   flex-direction: column
@@ -227,14 +257,15 @@ nav
 
   .work-image
     max-width: 100%
+    margin-top: 50px
     margin-bottom: 40px
 
   .line
     height: 5px
     width: 100%
     background-color: $gold
-    margin-top: 40px
-    margin-bottom: 70px
+    margin-top: 30px
+    margin-bottom: 30px
 
   p
     font-size: 2em
@@ -258,7 +289,10 @@ nav
 
   h2
     color: $off-black
-    margin-top: 40px
+    margin: 30px
+
+    .contact
+      margin-bottom: 30px
 
   p
     color: $gold
@@ -324,12 +358,14 @@ footer
     cursor: pointer
 
   &:visited
-    text-decoration: none
-    color: $off-white
+    
+    color: $off-black
 
   &:active
     text-decoration: none
     text-decoration-style: none
+    color: $off-black
+
 
   &:hover
     background: $gold       
@@ -381,8 +417,5 @@ footer
     &:active
       text-decoration: none
       text-decoration-style: none
- 
-
-
 
 
