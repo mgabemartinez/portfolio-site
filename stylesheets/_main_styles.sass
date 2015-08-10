@@ -150,7 +150,8 @@ nav
       padding-bottom: 25px
 
 .textbox
-  height: 75%
+  height: 40%
+  width: 500px
   max-width: 550px
   display: flex
   flex-direction: column
@@ -159,9 +160,11 @@ nav
   text-align: center
   padding: 50px
   border: solid 3px $light-gold
+  margin-top: 40px
+
 
 #about,
-  min-height: 100vh
+  min-height: 150vh
   background: $secondary-background
   display: flex
   flex-direction: column
@@ -173,6 +176,10 @@ nav
   h2
     color: $off-black
     padding: 0 10% 3% 10%
+
+  .head-shot
+    width: 75%
+    margin: 50px
 
 #music,
   min-height: 100vh
@@ -251,8 +258,11 @@ nav
 
   h2
     color: $off-black
-    padding: 0 10% 3% 10%
+    margin-top: 40px
 
+  p
+    color: $gold
+    font-size: 1.2em
 
 footer
   height: 20vh
@@ -269,7 +279,23 @@ footer
     color: $off-white
     font-size: .8em
 
-          
+.skills
+  text-decoration: none
+  float: left
+  width: 120px
+  height: 45px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: $gold
+  color: $off-white
+  font-family: $main-font
+  font-weight: 700
+  font-size: .8em
+  text-transform: uppercase
+  letter-spacing: 2px
+  margin: 8px    
 
 .button-large
   text-decoration: none
@@ -308,4 +334,55 @@ footer
   &:hover
     background: $gold       
     border: solid 3px $gold
+
   
+.skill-list
+  max-width: 450px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+
+.social
+  max-width: 450px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 20px
+
+  .social-links
+    text-decoration: none
+    float: left
+    width: 130px
+    height: 45px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-color: $gold
+    color: $off-white
+    font-family: $main-font
+    font-weight: 700
+    font-size: .8em
+    text-transform: uppercase
+    letter-spacing: 2px
+    margin: 8px 
+
+    &:hover
+      text-decoration: none
+      color: $off-white
+      background-color: $off-black
+      cursor: pointer
+
+    &:visited
+      text-decoration: none
+      color: $off-white
+
+    &:active
+      text-decoration: none
+      text-decoration-style: none
+ 
+
+
+
+

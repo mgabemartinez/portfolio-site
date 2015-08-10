@@ -133,7 +133,8 @@ nav {
       padding-bottom: 25px; }
 
 .textbox {
-  height: 75%;
+  height: 40%;
+  width: 500px;
   max-width: 550px;
   display: flex;
   flex-direction: column;
@@ -141,10 +142,11 @@ nav {
   align-items: center;
   text-align: center;
   padding: 50px;
-  border: solid 3px #EBE2CE; }
+  border: solid 3px #EBE2CE;
+  margin-top: 40px; }
 
 #about {
-  min-height: 100vh;
+  min-height: 150vh;
   background: #FCFCFC;
   display: flex;
   flex-direction: column;
@@ -155,6 +157,9 @@ nav {
   #about h2 {
     color: #292929;
     padding: 0 10% 3% 10%; }
+  #about .head-shot {
+    width: 75%;
+    margin: 50px; }
 
 #music {
   min-height: 100vh;
@@ -222,7 +227,10 @@ nav {
   border-top: solid 6px #EBE2CE; }
   #connect h2 {
     color: #292929;
-    padding: 0 10% 3% 10%; }
+    margin-top: 40px; }
+  #connect p {
+    color: #B59551;
+    font-size: 1.2em; }
 
 footer {
   height: 20vh;
@@ -237,6 +245,24 @@ footer {
   footer p {
     color: #FCFCFC;
     font-size: 0.8em; }
+
+.skills {
+  text-decoration: none;
+  float: left;
+  width: 120px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #B59551;
+  color: #FCFCFC;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 8px; }
 
 .button-large {
   text-decoration: none;
@@ -271,5 +297,47 @@ footer {
   .button-large:hover {
     background: #B59551;
     border: solid 3px #B59551; }
+
+.skill-list {
+  max-width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.social {
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; }
+  .social .social-links {
+    text-decoration: none;
+    float: left;
+    width: 130px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #B59551;
+    color: #FCFCFC;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 8px; }
+    .social .social-links:hover {
+      text-decoration: none;
+      color: #FCFCFC;
+      background-color: #292929;
+      cursor: pointer; }
+    .social .social-links:visited {
+      text-decoration: none;
+      color: #FCFCFC; }
+    .social .social-links:active {
+      text-decoration: none;
+      text-decoration-style: none; }
 
 /*# sourceMappingURL=base.css.map */

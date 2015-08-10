@@ -51,7 +51,7 @@ var waypoint = new Waypoint({
 ////////// Progress Bar /////////
 
 var winHeight = $(window).height(),
-  docHeight = $('body').height();
+  docHeight = $('').height();
   max = docHeight - winHeight;
 
 $('progress').attr('max', max);
