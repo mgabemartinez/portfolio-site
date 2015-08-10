@@ -1,0 +1,415 @@
+html  
+
+body
+  height: 100%
+
+h1
+  color: $gold
+  font-size: 7em
+  letter-spacing: 4px
+  font-family: $main-font, sans-serif
+  font-weight: 700
+  text-shadow: 5px 5px #5E5E5E
+  margin-bottom: 30px
+
+h2
+  color: $off-black
+  font-family: $main-font, sans-serif
+  font-size: 2em
+  font-weight: 600
+  max-width: 550px
+  line-height: 1.3em
+
+p
+  color: $off-black
+  font-size: 1.2em
+  font-family: $main-font, sans-serif
+  font-weight: 600
+  max-width: 550px
+  line-height: 1.7em
+
+a
+  text-decoration: none
+  color: $gold
+  font-size: 1.2em
+  font-family: $main-font, sans-serif
+  font-weight: 600
+
+  &:visited
+    color: white
+
+  &:visited:hover
+    color: white
+
+  &:active
+    color: white
+
+.football-links
+  color: $gold
+  font-family: $main-font, sans-serif
+  font-size: 1em
+  text-decoration: none
+  margin-left: 4px
+
+  &:hover
+    border-bottom: 3px solid $gold
+
+  &:visited
+    color: $gold
+
+  &:visited:hover
+    color: $off-black
+
+  &:active
+    color: $off-black
+
+.progress
+  width: 100%
+  height: 7px
+  background-color: black
+  position: fixed
+  top: 6
+
+progress
+  z-index: 999
+  position: fixed
+  left: 0
+  top: 0
+
+  /* Dimensions */
+  width: 100%
+  height: 8px
+
+  /* Reset the appearance */
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent
+
+  /* Progress bar value for IE10+ */
+  color: #52BECC
+
+progress::-webkit-progress-bar
+  background-color: $off-white
+
+progress::-webkit-progress-value
+  background-color: #EBE2CE
+
+progress::-moz-progress-bar
+  background-color: #EBE2CE
+
+#home
+  height: 100vh
+  background-image: url(../img/trees2.jpg)
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: $off-white
+  justify-content: center
+  text-align: center
+  margin-top: px
+
+
+  .hero
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center 
+    text-align: center
+
+nav
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  position: fixed
+  width: 100%
+  margin-top: 8px
+  z-index: 999
+
+
+  #logo
+    margin-top: 0
+    color: $gold
+    font-size: 2.5em
+    letter-spacing: 4px
+    font-family: $main-font, sans-serif
+    font-weight: 700
+    text-shadow: 4px 4px $shadow
+    position: fixed
+    float: left
+    padding-top: 1%
+    padding-left: 1.5%
+
+  li
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 1em
+    font-weight: 500
+    text-transform: uppercase
+    color: white
+    letter-spacing: 4px
+    display: inline-block
+
+    &:hover
+      background: $gold
+      
+    a
+      text-decoration: none
+      font-weight: 500
+      font-size: 1em
+      margin: 0px
+      display: block
+      width: 100%
+      height: 100%
+      padding-top: 30px
+      padding-right: 60px
+      padding-bottom: 25px
+
+.textbox
+
+  width: 500px
+  max-width: 550px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: 50px
+  border: solid 3px $light-gold
+  margin: 50px
+
+
+#about,
+  min-height: 1740px
+  background: $secondary-background
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  border-top: solid 6px $light-gold
+
+  h2
+    color: $off-black
+    padding: 0 10% 3% 10%
+
+  .head-shot
+    width: 75%
+    margin: 50px
+
+#music,
+  min-height: 100vh
+  background: $secondary-background
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  border-top: solid 6px $light-gold
+  
+
+  .music-player
+    position: absolute
+    bottom: 0
+    background-color: $tropical-blue      
+    height: 200px
+    width: 100%
+    justify-content: center
+    text-align: center
+
+
+#web
+  height: 3200px
+  background: white
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  border-top: solid 6px $light-gold
+
+  .section-title
+    padding: 30px
+    margin-top: 80px
+    margin-bottom: 40px
+
+.work-display
+  max-width: 800px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+  .work-image
+    max-width: 100%
+    margin-top: 50px
+    margin-bottom: 40px
+
+  .line
+    height: 5px
+    width: 100%
+    background-color: $gold
+    margin-top: 30px
+    margin-bottom: 30px
+
+  p
+    font-size: 2em
+    color: $off-black
+    
+
+  .italic
+    font-size: 1em
+    text-decoration: italic
+    margin: 0 auto
+
+#connect
+  height: 100vh
+  background: $main-background
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  border-top: solid 6px $light-gold
+
+  h2
+    color: $off-black
+    margin: 30px
+
+    .contact
+      margin-bottom: 30px
+
+  p
+    color: $gold
+    font-size: 1.2em
+
+footer
+  height: 20vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center 
+  text-align: center
+  background: $off-black
+  border-top: solid 6px $off-white
+  border-bottom: solid 6px $gold
+
+  p 
+    color: $off-white
+    font-size: .8em
+
+.skills
+  text-decoration: none
+  float: left
+  width: 120px
+  height: 45px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: $gold
+  color: $off-white
+  font-family: $main-font
+  font-weight: 700
+  font-size: .8em
+  text-transform: uppercase
+  letter-spacing: 2px
+  margin: 8px    
+
+.button-large
+  text-decoration: none
+  float: left
+  width: 300px
+  height: 100px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: transparent
+  color: $off-black
+  font-family: $main-font
+  font-weight: 500
+  font-size: 1em
+  text-transform: uppercase
+  letter-spacing: 2px
+  border: solid 3px $off-black
+  margin-top: 50px
+  margin-bottom: 50px
+
+  &:hover
+    text-decoration: none
+    color: $off-white
+    background-color: $off-black
+    cursor: pointer
+
+  &:visited
+    text-decoration: none
+    color: $off-black
+
+  &:active
+    text-decoration: none
+    text-decoration-style: none
+
+  &:hover
+    background: $gold       
+    border: solid 3px $gold
+
+  
+.skill-list
+  max-width: 450px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+
+.social
+  max-width: 450px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 20px
+
+  .social-links
+    text-decoration: none
+    float: left
+    width: 130px
+    height: 45px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-color: $gold
+    color: $off-white
+    font-family: $main-font
+    font-weight: 700
+    font-size: .8em
+    text-transform: uppercase
+    letter-spacing: 2px
+    margin: 8px 
+
+    &:hover
+      text-decoration: none
+      color: $off-white
+      background-color: $off-black
+      cursor: pointer
+
+    &:visited
+      text-decoration: none
+      color: $off-white
+
+    &:active
+      text-decoration: none
+      text-decoration-style: none
+ 
+
+
+
+
